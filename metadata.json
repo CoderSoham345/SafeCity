@@ -1,0 +1,6 @@
+{
+  "name": "SafeCity Mumbai AI",
+  "description": "AI-Powered Smart Civic Reporting & Emergency Response Platform",
+  "requestFramePermissions": ["geolocation", "camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
