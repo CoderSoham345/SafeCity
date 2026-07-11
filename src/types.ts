@@ -51,3 +51,34 @@ export interface RoadmapPhase {
   deliverables: string[];
   status: 'Completed' | 'In Progress' | 'Pending Approval';
 }
+
+export interface Complaint {
+  id: string;
+  category: string;
+  subCategory: string;
+  ward: string;
+  address: string;
+  lat: number;
+  lng: number;
+  description: string;
+  imageUrl?: string;
+  severity: 'Low' | 'Medium' | 'High' | 'Critical';
+  department: string;
+  status: 'Submitted' | 'Assigned' | 'In_Progress' | 'Resolved';
+  upvotes: number;
+  aiSummary: string;
+  timestamp: string;
+  anonymous: boolean;
+}
+
+export interface BmcService {
+  id: string;
+  titleKey: string;
+  defaultTitle: string;
+  icon: string;
+  description: string;
+  department: string;
+}
+
+export type Language = 'en' | 'hi' | 'mr';
+
